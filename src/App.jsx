@@ -1,11 +1,29 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import React from "react";
 import "./App.css";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import QuizPage from "./Components/QuizPage/QuizPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="App"></div>;
+  const [isLandingPage, setIsLandingPage] = React.useState(true);
+  const toggleIsLandingPage = (value) => {
+    setIsLandingPage(value);
+  };
+  const backToLanding = () => {
+    setIsLandingPage(true);
+  };
+  return (
+    <div className="App">
+      {isLandingPage ? (
+        <LandingPage
+          toggleIsLandingPage={() => {
+            toggleIsLandingPage(false);
+          }}
+        />
+      ) : (
+        <QuizPage backToLanding={backToLanding} />
+      )}
+    </div>
+  );
 }
 
 export default App;

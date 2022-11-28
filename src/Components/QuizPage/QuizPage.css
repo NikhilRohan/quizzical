@@ -1,0 +1,69 @@
+.quizPage {
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px white solid;
+  box-shadow: 5px 5px 5px #cbc7c7, -5px -5px 10px #cbc7c7;
+  max-width: 600px;
+}
+.quizPage--section--question {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+}
+.quizPage--section--options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.optionClass {
+  cursor: pointer;
+  padding: 13px;
+  margin: 10px;
+  border: 0.794239px solid #4d5b9e;
+  border-radius: 7.71045px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #293264;
+}
+.quizPage--submitBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quizPage--submitBtn,
+.quizPage--playAgainBtn {
+  width: 120px;
+  height: 35px;
+  background: #4d5b9e;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.disabledBtn {
+  cursor: unset;
+  background-color: #d6dbf5;
+}
+.scoreResultText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quizPage--playAgainBtn {
+  margin-left: 10px;
+}
